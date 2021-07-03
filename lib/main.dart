@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Chapter01/Chapter01Page.dart';
+import 'Chapter02/Chapter02Page.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: Chapter01Page(),
+      home: Chapter02Page(),
     );
   }
 }
