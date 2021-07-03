@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './Variables.dart';
 
 class Chapter01Page extends StatelessWidget {
   
