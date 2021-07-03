@@ -4,9 +4,17 @@ class Chapter01Page extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("Chapter 01 Home Page")
-      
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Chapter 01"),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Text("This is the body")
+          ],
+        ),
+      ),
     );
   }
 }
