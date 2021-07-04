@@ -2,7 +2,10 @@ stringFunctions() {
   basicStrings();
   multiLineStrings();
   combinedStrings();
+  stringBuffer();
 }
+
+// Convention ins DART is to use single quotes ' ' over double quotes " "
 
 void basicStrings() {
   // With Single Quotes
@@ -39,7 +42,6 @@ void multiLineStrings() {
   print(hamlet);
 }
 
-// "Added combinedStrings(), traditionalConcatenation(), modernInterpolation()"
 void combinedStrings() {
   traditionalConcatenation();
   modernInterpolation();
@@ -58,6 +60,19 @@ modernInterpolation() {
   print(interpolated);
 
   final age = 101;
+  // You can use Dart expression ${ ... }
   final stateAge = "I am $age ${age == 1 ? 'year' : 'years'} old";
   print(stateAge);
+}
+
+stringBuffer() {
+  List fruits = ['Strawberry', 'Coconut', 'Orange', 'Mango', 'Apple'];
+  StringBuffer buffer = StringBuffer();
+  for (String fruit in fruits) {
+    buffer.write(fruit);
+    buffer.write(' ');
+  }
+  print(buffer.toString()); // prints: Strawberry Coconut Orange Mango Apple
+  print(
+      fruits.toString()); // prints [Strawberry, Coconut, Orange, Mango, Apple]
 }
