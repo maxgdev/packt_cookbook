@@ -39,4 +39,25 @@ void multiLineStrings() {
   print(hamlet);
 }
 
-void combinedStrings() {}
+// "Added combinedStrings(), traditionalConcatenation(), modernInterpolation()"
+void combinedStrings() {
+  traditionalConcatenation();
+  modernInterpolation();
+}
+
+traditionalConcatenation() {
+  final h1 = "Hello";
+  final w1 = "World";
+  final combined = h1 + " " + w1;
+  print(combined);
+}
+
+modernInterpolation() {
+  final y1 = 2011;
+  final interpolated = 'Dart was announced on $y1.';
+  print(interpolated);
+
+  final age = 101;
+  final stateAge = "I am $age ${age == 1 ? 'year' : 'years'} old";
+  print(stateAge);
+}
