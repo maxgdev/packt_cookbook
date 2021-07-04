@@ -30,4 +30,22 @@ int factorial(int num) {
 }
 
 // "Added functionsDemo(),classicalFunctions(), printMyName(), addNumbers(), factorial()"
-optionalParameters() {}
+optionalParameters() {
+  unnamed('Garvey', 120);
+  named(greeting: 'Well, Hello there', name: 'Amen Ra');
+}
+
+// if you wrap your function's parameter list in square brackets, then those parameters
+// can be omitted without the compiler throwing errors
+void unnamed([String? name, int? age]) {
+  final actualName = name ?? 'Unknown';
+  final actualAge = age ?? 0;
+  print("$actualName is $actualAge years old");
+}
+
+// Note the use of {} and ? after type String for name parameters
+void named({String? greeting, String? name}) {
+  final actualGreeting = greeting ?? 'Hello';
+  final actualName = name ?? 'Unknown Person';
+  print('$actualGreeting, $actualName!');
+}
