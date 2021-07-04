@@ -1,6 +1,7 @@
 functionsDemo() {
   classicalFunctions();
   optionalParameters();
+
 }
 
 classicalFunctions() {
@@ -29,10 +30,16 @@ int factorial(int num) {
   return num * factorial(num - 1);
 }
 
-// "Added functionsDemo(),classicalFunctions(), printMyName(), addNumbers(), factorial()"
 optionalParameters() {
-  unnamed('Garvey', 120);
+  unnamed('Huxley', 33);
+  unnamed();
+  // Notice how named parameters can be in any order
+  named(greeting: 'Greetings and Salutations');
+  named(name: 'Sonia');
+  named(name: 'Alex', greeting: 'Bonjour');
   named(greeting: 'Well, Hello there', name: 'Amen Ra');
+  final multiply = duplicate('Mikey', times: 3);
+  print(multiply);
 }
 
 // if you wrap your function's parameter list in square brackets, then those parameters
@@ -49,3 +56,18 @@ void named({String? greeting, String? name}) {
   final actualName = name ?? 'Unknown Person';
   print('$actualGreeting, $actualName!');
 }
+
+// function returns a String value
+// optional times parameter with default value
+String duplicate(String nameParameter, {int times = 1}) {
+  String merged = '';
+  for (int i = 0; i < times; i++) {
+    merged += nameParameter;
+    if (i != times - 1) {
+      merged += ' ';
+    }
+  }
+  return merged;
+}
+
+
