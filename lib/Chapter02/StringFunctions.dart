@@ -24,6 +24,19 @@ void basicStrings() {
   print(mixAndMatch2);
 }
 
-void multiLineStrings() {}
+void multiLineStrings() {
+  // \n newline character
+  final withEscaping = 'One Fish\nTwo Fish\nRed Fish\nBlue Fish';
+  print(withEscaping);
+  // Note the use of ''' (3 apostrophes)
+  final hamlet = '''
+  To be, or not to be, that is the question:
+  Whether 'tis nobler in the mind to suffer
+  The slings and arrows of outrageous fortune,
+  Or to take arms against a sea of troubles
+  And by opposing end them.
+  ''';
+  print(hamlet);
+}
 
 void combinedStrings() {}

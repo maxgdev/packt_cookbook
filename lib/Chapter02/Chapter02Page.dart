@@ -13,8 +13,8 @@ class Chapter02Page extends StatelessWidget {
         child: Column(
           children: [
             Text("This is the body"), 
-            Text(variables().toString()),
-            Text(stringFunctions()),
+            // Text(variables().toString()),
+            Text(stringFunctions().toString()),
             ],
         ),
       ),
