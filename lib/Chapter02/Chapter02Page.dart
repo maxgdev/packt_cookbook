@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './Variables.dart';
+import './StringFunctions.dart';
 
 class Chapter02Page extends StatelessWidget {
   @override
@@ -10,7 +11,11 @@ class Chapter02Page extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          children: [Text("This is the body"), Text(variables().toString())],
+          children: [
+            Text("This is the body"), 
+            Text(variables().toString()),
+            Text(stringFunctions()),
+            ],
         ),
       ),
     );
