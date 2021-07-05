@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 // import './Variables.dart';
 import './StringFunctions.dart';
 import './FunctionsDemo.dart';
+import './Classes.dart';
 
 class Chapter02Page extends StatelessWidget {
   @override
@@ -17,6 +18,7 @@ class Chapter02Page extends StatelessWidget {
             // Text(variables().toString()),
             Text(stringFunctions().toString()),
             Text(functionsDemo().toString()),
+            Text(classDemo())
           ],
         ),
       ),
