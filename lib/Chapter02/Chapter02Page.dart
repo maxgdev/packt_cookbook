@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 // import './Variables.dart';
-import './StringFunctions.dart';
-import './FunctionsDemo.dart';
-import './Classes.dart';
+// import './StringFunctions.dart';
+// import './FunctionsDemo.dart';
+// import './Classes.dart';
+import './CollectionDemo.dart';
 
 class Chapter02Page extends StatelessWidget {
   @override
@@ -16,9 +17,10 @@ class Chapter02Page extends StatelessWidget {
           children: [
             Text("This is the body"),
             // Text(variables().toString()),
-            Text(stringFunctions().toString()),
-            Text(functionsDemo().toString()),
-            Text(classDemo())
+            // Text(stringFunctions().toString()),
+            // Text(functionsDemo().toString()),
+            // Text(classDemo().toString()),
+            Text(collectionDemo().toString())
           ],
         ),
       ),
