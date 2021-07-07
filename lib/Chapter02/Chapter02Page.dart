@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 // import './FunctionsDemo.dart';
 // import './Classes.dart';
 import './CollectionDemo.dart';
+import './HigherOrderFunctions.dart';
 
 class Chapter02Page extends StatelessWidget {
   @override
@@ -20,7 +21,8 @@ class Chapter02Page extends StatelessWidget {
             // Text(stringFunctions().toString()),
             // Text(functionsDemo().toString()),
             // Text(classDemo().toString()),
-            Text(collectionDemo().toString())
+            // Text(collectionDemo().toString()),
+            Text(higherOrderFunctions().toString())
           ],
         ),
       ),
