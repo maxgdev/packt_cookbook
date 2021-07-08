@@ -58,6 +58,15 @@ sorting() {
   names.forEach(print);
 }
 
-filtering() {}
+filtering() {
+  final names = mapping();
+  final onlyMs = names.where((name) => name.last.startsWith('M'));
+  print("");
+  print("---Filters name list by M character---");
+  onlyMs.forEach((element) => print(element));
+  // shorthand for above code
+  // onlyMs.forEach(print);
+}
+
 reducing() {}
 flattening() {}
