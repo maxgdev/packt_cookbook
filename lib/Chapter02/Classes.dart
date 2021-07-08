@@ -1,9 +1,9 @@
-
 class Name {
   final String first;
   final String last;
+  final int age;
 
-  Name(this.first, this.last);
+  Name(this.first, this.last, this.age);
 
   @override
   String toString() {
@@ -15,7 +15,8 @@ class OfficialName extends Name {
   // Private properties/variables use the _ (underscore character)
   final String _title;
 
-  OfficialName(this._title, String first, String last) : super(first, last);
+  OfficialName(this._title, String first, String last, int age)
+      : super(first, last, age);
 
   @override
   String toString() {
@@ -24,7 +25,7 @@ class OfficialName extends Name {
 }
 
 classDemo() {
-  final name = OfficialName("Mr", "Donald", "Trump");
+  final name = OfficialName("Mr", "Donald", "Trump", 99);
   final message = name.toString();
   print(message);
 }

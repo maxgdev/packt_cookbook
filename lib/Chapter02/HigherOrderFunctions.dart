@@ -23,6 +23,8 @@ List<Map> data = [
   {'first': 'Taio', 'last': 'Mathews', 'age': 17},
 ];
 
+
+
 higherOrderFunctions() {
   final names = mapping();
   names.forEach(print);
@@ -32,17 +34,25 @@ higherOrderFunctions() {
   flattening();
 }
 
+// import from Classes.dart
+// class Name {
+//   final String first;
+//   final String last;
+//   Name(this.first, this.last);
 List<Name> mapping() {
  // Transform the data from raw maps to a strongly typed model
 final names = data.map<Name>((Map rawName) {
 final first = rawName['first'];
 final last = rawName['last'];
-return Name(first, last);
+final age = rawName['age'];
+return Name(first, last, age);
 }).toList();
   return names;
 }
 
-sorting() {}
+sorting() {
+  
+}
 filtering() {}
 reducing() {}
 flattening() {}
