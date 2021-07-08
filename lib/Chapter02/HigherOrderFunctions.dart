@@ -48,6 +48,21 @@ List<Name> mapping() {
   }).toList();
   return names;
 }
+// Chapter 2, Page 74
+// Without the map function, we would usually write
+// code like this
+// final names = <Name>[];
+// for (Map rawName in data) {
+//  final first = rawName['first'];
+//  final last = rawName['last'];
+//  final name = Name(first, last);
+//  names.add(name);
+// }
+
+// ... purposefully verbose. Simplify to:
+// final names = data.map<Name>(
+// (raw) => Name(raw['first'], raw['last']),
+// ).toList();
 
 sorting() {
   final names = mapping();
@@ -75,6 +90,7 @@ reducing() {
   final average = total / allAges.length;
   print('The average age is $average');
 }
+
 flattening() {
   final matrix = [
     [1, 0, 0],
