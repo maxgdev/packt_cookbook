@@ -75,4 +75,12 @@ reducing() {
   final average = total / allAges.length;
   print('The average age is $average');
 }
-flattening() {}
+flattening() {
+  final matrix = [
+    [1, 0, 0],
+    [0, 0, -1],
+    [0, 1, 0],
+  ];
+  final linear = matrix.expand<int>((row) => row);
+  print(linear);
+}
