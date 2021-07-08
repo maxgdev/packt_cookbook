@@ -23,10 +23,9 @@ List<Map> data = [
   {'first': 'Taio', 'last': 'Mathews', 'age': 17},
 ];
 
-
-
 higherOrderFunctions() {
   final names = mapping();
+  print("----Mapping function----");
   names.forEach(print);
   sorting();
   filtering();
@@ -40,19 +39,25 @@ higherOrderFunctions() {
 //   final String last;
 //   Name(this.first, this.last);
 List<Name> mapping() {
- // Transform the data from raw maps to a strongly typed model
-final names = data.map<Name>((Map rawName) {
-final first = rawName['first'];
-final last = rawName['last'];
-final age = rawName['age'];
-return Name(first, last, age);
-}).toList();
+  // Transform the data from raw maps to a strongly typed model
+  final names = data.map<Name>((Map rawName) {
+    final first = rawName['first'];
+    final last = rawName['last'];
+    final age = rawName['age'];
+    return Name(first, last, age);
+  }).toList();
   return names;
 }
 
 sorting() {
-  
+  final names = mapping();
+  // Alphabetize the list by last name
+  names.sort((a, b) => a.last.compareTo(b.last));
+  print('');
+  print('Alphabetical List of Names');
+  names.forEach(print);
 }
+
 filtering() {}
 reducing() {}
 flattening() {}
