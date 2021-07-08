@@ -68,5 +68,11 @@ filtering() {
   // onlyMs.forEach(print);
 }
 
-reducing() {}
+reducing() {
+  // Merge an element of the data together
+  final allAges = data.map<int>((person) => person['age']);
+  final total = allAges.reduce((total, age) => total + age);
+  final average = total / allAges.length;
+  print('The average age is $average');
+}
 flattening() {}
