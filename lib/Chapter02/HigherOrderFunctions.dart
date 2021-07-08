@@ -90,6 +90,11 @@ reducing() {
   final average = total / allAges.length;
   print('The average age is $average');
 }
+// without reduce()
+// int sum = 0;
+// for (int age in allAges) {
+//  sum += age;
+// }
 
 flattening() {
   final matrix = [
