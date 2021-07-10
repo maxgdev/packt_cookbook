@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'Chapter02/Chapter02Page.dart';
 import 'Chapter03/Chapter03Page.dart';
 
 void main() {
@@ -19,3 +18,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+// VS Code Only
+// Ctrl + . (Ctrl + fullstop) to show import options to fix missing dependencies

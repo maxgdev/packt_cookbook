@@ -10,7 +10,7 @@ class ImmutableWidget extends StatelessWidget {
         child: Container(
           color: Colors.purple,
           child: Padding(
-            padding: const EdgeInsets.all(50.0),
+            padding: const EdgeInsets.all(40.0),
             child: Container(
               color: Colors.blue,
             ),
