@@ -16,6 +16,12 @@ class Chapter03Page extends StatelessWidget {
         ],
       ),
       body: BasicScreen(),
+      drawer: Drawer(child: Container(
+        color: Colors.lightBlue,
+        child: Center(
+          child: Text("I'm a Flutter Drawer!"),
+        ),
+      ),),
     );
   }
 }
