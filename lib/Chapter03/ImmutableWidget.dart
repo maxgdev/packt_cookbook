@@ -5,7 +5,20 @@ class ImmutableWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.green,
+      decoration: BoxDecoration(color: Colors.green),
+      foregroundDecoration: BoxDecoration(
+        backgroundBlendMode: BlendMode.colorBurn,
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xAA0d6123),
+            Color(0x00000000),
+            Color(0xAA0d6123),
+          ],
+        ),
+      ),
+      // color: Colors.green,
       child: Center(
         child: Transform.rotate(
           angle: 180 / Math.pi, // Rotations in radians
