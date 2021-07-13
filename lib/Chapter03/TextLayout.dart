@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TextLayout extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class TextLayout extends StatelessWidget {
       children: <Widget>[
         Text(
           'Hello, World!',
-          style: TextStyle(fontSize: 46),
+          style: GoogleFonts.leckerliOne(fontSize: 46),
         ),
         Text(
           'Text can wrap without issue',
