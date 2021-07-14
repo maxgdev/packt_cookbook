@@ -18,14 +18,14 @@ class Chapter03Page extends StatelessWidget {
           )
         ],
       ),
-      // body: BasicScreen(),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          AspectRatio(aspectRatio: 1.0, child: ImmutableWidget()),
-          TextLayout(),
-        ],
-      ),
+      body: BasicScreen(),
+      // body: Column(
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: [
+      //     AspectRatio(aspectRatio: 1.0, child: ImmutableWidget()),
+      //     TextLayout(),
+      //   ],
+      // ),
       drawer: Drawer(
         child: Container(
           color: Colors.lightBlue,
