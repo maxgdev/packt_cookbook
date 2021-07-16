@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:packt_cookbook/Chapter03/BasicScreen.dart';
-import 'package:packt_cookbook/Chapter03/ImmutableWidget.dart';
-import 'package:packt_cookbook/Chapter03/TextLayout.dart';
-// import '../Chapter03/ImmutableWidget.dart';
+import './ProfileScreen.dart';
 
 class Chapter04Page extends StatelessWidget {
   @override
@@ -18,8 +15,7 @@ class Chapter04Page extends StatelessWidget {
           )
         ],
       ),
-      body: Text("Chapter 04 Page"),
-
+      body: ProfileScreen(),
       drawer: Drawer(
         child: Container(
           color: Colors.lightBlue,
