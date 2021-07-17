@@ -21,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
       child: ClipOval(
         child: Image.asset(
           'images/ash-edmonds-black-panther-unsplash.jpg',
-          fit: BoxFit.fitHeight,
+          fit: BoxFit.fitWidth,
         ),
       ),
     );

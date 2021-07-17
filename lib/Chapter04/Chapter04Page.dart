@@ -7,7 +7,7 @@ class Chapter04Page extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.indigo,
-        title: Text("Flutter Cookbook: Chapter 03"),
+        title: Text("Flutter Cookbook: Chptr 04"),
         actions: [
           Padding(
             padding: const EdgeInsets.all(10.0),
