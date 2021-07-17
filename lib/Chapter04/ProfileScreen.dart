@@ -34,11 +34,11 @@ class ProfileScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            'Wolfram Barkovich',
+            'Black Panther',
             style: TextStyle(fontSize: 35, fontWeight: FontWeight.w600),
           ),
-          _buildDetailsRow('Age', '4'),
-          _buildDetailsRow('Status', 'Good Boy'),
+          _buildDetailsRow('Age', '7'),
+          _buildDetailsRow('Status', 'Powerful Cat'),
         ],
       ),
     );
@@ -57,6 +57,22 @@ class ProfileScreen extends StatelessWidget {
   }
 
   Widget _buildActions(BuildContext context) {
-    return Container();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        _buildIcon(Icons.restaurant, 'Feed'),
+        _buildIcon(Icons.favorite, 'Pet'),
+        _buildIcon(Icons.directions_walk, 'Walk'),
+      ],
+    );
+  }
+
+  Widget _buildIcon(IconData icon, String text) {
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: Column(
+        children: <Widget>[Icon(icon, size: 40), Text(text)],
+      ),
+    );
   }
 }
