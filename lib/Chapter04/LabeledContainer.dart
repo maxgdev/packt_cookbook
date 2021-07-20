@@ -7,7 +7,7 @@ class LabeledContainer extends StatelessWidget {
   final String text;
   final Color textColor;
   const LabeledContainer({
-    Key key,
+    Key key,  
     this.width,
     this.height = double.infinity,
     this.color,
