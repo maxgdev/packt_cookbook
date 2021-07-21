@@ -1,36 +1,15 @@
 import 'package:flutter/material.dart';
 
-// Image.asset('images/aaron-katz-forest-unsplash.jpg'),
-
-class ProfileScreen extends StatelessWidget {
+class FlexScreen extends StatelessWidget {
   @override
-  // Widget build(BuildContext context) {
-  //   return Scaffold(
-  //     body: Stack(
-  //       children: <Widget>[
-  //       Image.asset('images/aaron-katz-forest-unsplash.jpg'),
-  //       Transform.translate(
-  //         offset: Offset(0, 100),
-  //         child: Column(
-  //           children: <Widget>[
-  //             _buildProfileImage(context),
-  //             _buildProfileDetails(context),
-  //             _buildActions(context),
-  //           ],
-  //         ),
-  //       )
-  //     ]),
-  //   );
-  // }
+
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: <Widget>[
           Image.asset(
             'images/aaron-katz-forest-unsplash.jpg',
-            // height: 320,
-            // width: 600,
-          ),
+              ),
           Transform.translate(
             offset: Offset(0, 100),
             child: Column(

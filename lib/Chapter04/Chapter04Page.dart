@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './ProfileScreen.dart';
+import './FlexScreen.dart';
 
 class Chapter04Page extends StatelessWidget {
   @override
@@ -15,7 +15,7 @@ class Chapter04Page extends StatelessWidget {
           )
         ],
       ),
-      body: ProfileScreen(),
+      body: FlexScreen(),
       drawer: Drawer(
         child: Container(
           color: Colors.lightBlue,
