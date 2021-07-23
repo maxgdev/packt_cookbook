@@ -8,11 +8,11 @@ class LabeledContainer extends StatelessWidget {
   final Color textColor;
   const LabeledContainer({
     Key key,  
-    this.width,
+    this.width = 0.0,
     this.height = double.infinity,
-    this.color,
-    @required this.text,
-    this.textColor,
+    this.color = Colors.black,
+    this.text = 'Null',
+    this.textColor = Colors.black,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
